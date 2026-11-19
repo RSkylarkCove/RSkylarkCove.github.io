@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>TetriX Blast support inbox</title>
+  <title>Tick Tock Blocks support inbox</title>
   <link rel="icon" href="../../favicon.png">
   <style>
     /* Purple/cyan theme on purpose, so it is never mistaken for the NoxPatch inbox (navy/gold). */
@@ -49,7 +49,7 @@
 <body>
 <header>
   <img src="../../favicon.png" alt="">
-  <h1>TetriX Blast · Support inbox</h1>
+  <h1>Tick Tock Blocks · Support inbox</h1>
   <span class="who" id="who"></span>
   <button class="ghost" id="out" hidden>Sign out</button>
 </header>
@@ -61,18 +61,20 @@ import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signO
 import { getFirestore, collection, query, orderBy, limit, getDocs, doc, getDoc, updateDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js';
 
 // ---- Settings for this game -------------------------------------------------
-// Tickets are kept apart from NoxPatch by living in their OWN Firestore collection.
-// The TetriX Blast app must write its support tickets to this collection (same fields as NoxPatch tickets).
-const GAME = 'TetriX Blast';
-const TICKETS = 'tetrixBlastTickets';
-// Same Firebase project and admin list as the NoxPatch inbox, so existing admins can sign in right away.
-// If TetriX Blast gets its own Firebase project, replace this config with that project's web config.
+// Tick Tock Blocks has its OWN Firebase project, so its tickets never mix with NoxPatch's.
+// The game writes tickets to the 'tickets' collection there (same fields as NoxPatch tickets).
+const GAME = 'Tick Tock Blocks';
+const TICKETS = 'tickets';
+// Paste the Tick Tock Blocks Firebase web config here (the same values as src/firebase-config.js in the game).
 const FIREBASE = {
-  apiKey: 'AIzaSyAkGFSK5lawplfrJgER71x7pSPLk_nUjZw', authDomain: 'owl-grove-51e8f.firebaseapp.com', projectId: 'owl-grove-51e8f',
-  appId: '1:589155193214:web:534a29e5a307c7da00a32f',
+  apiKey: 'YOUR_API_KEY', authDomain: '', projectId: '', appId: '',
 };
 // -----------------------------------------------------------------------------
 
+if (FIREBASE.apiKey.startsWith('YOUR')) {
+  document.getElementById('app').innerHTML = '<div class="card"><h2>Not connected yet</h2><p>Paste the Tick Tock Blocks Firebase config into this page (FIREBASE at the top of the script).</p></div>';
+  throw new Error('Firebase config missing');
+}
 const app = initializeApp(FIREBASE);
 const auth = getAuth(app), db = getFirestore(app);
 const $ = (s) => document.querySelector(s);
