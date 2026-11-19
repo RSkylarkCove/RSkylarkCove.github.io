@@ -37,6 +37,7 @@
     <tr><td>Friend code, friends list, friend requests and whether you are online</td><td>Only if you sign in and use Friends</td><td>So you can add friends, see when they are online and invite them to a match. Your online status is visible only to your friends and to the matching system</td></tr>
     <tr><td>Live match data: your board, score and the powers you send, during a Versus match</td><td>Only during online Versus matches</td><td>To show your opponent your board and score in real time. It is only used for the match</td></tr>
     <tr><td>Help &amp; Support messages: name, email, message, optional screenshots and video link, app version, phone model and game stats</td><td>Only if you send a message</td><td>To answer you and fix problems</td></tr>
+    <tr><td>Crash reports (what went wrong, app version, phone model and Android version)</td><td>When the app crashes or hits an error</td><td>Collected by Firebase Crashlytics so we can find and fix problems. They don’t include your name, email or account</td></tr>
     <tr><td>Advertising ID, IP address, approximate location, device and app interaction data</td><td>When ads are shown</td><td>Collected by Google AdMob to show and measure ads (see below)</td></tr>
     <tr><td>Your progress (best scores, Versus stars and game stats), Replace token balance and whether you bought Remove Ads</td><td>Only if you sign in (buying requires an account)</td><td>So your progress and purchases belong to your account: sign in on a new phone and they come back. Only you can see this</td></tr>
     <tr><td>Purchase records</td><td>When you buy something in the app</td><td>Handled by Google Play or the Apple App Store. We never see your payment details</td></tr>
@@ -48,7 +49,7 @@
 
   <h2>Service providers</h2>
   <ul>
-    <li><b>Google Firebase</b> (Authentication, Cloud Firestore and Realtime Database): accounts, rankings, friends, live matches and support messages. Data is stored on Google Cloud servers. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
+    <li><b>Google Firebase</b> (Authentication, Cloud Firestore, Realtime Database and Crashlytics): accounts, rankings, friends, live matches, support messages and crash reports. Data is stored on Google Cloud servers. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
     <li><b>Google AdMob</b>: ads. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
     <li><b>Google Play Billing</b> and <b>Apple App Store</b>: in-app purchases</li>
     <li><b>Sign in with Google</b> (and, where offered, <b>Sign in with Apple</b>): only if you choose them. We receive your name, email and an account ID; we never post anything on your behalf or access your contacts</li>
