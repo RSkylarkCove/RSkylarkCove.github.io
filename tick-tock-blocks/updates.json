@@ -1,21 +1,19 @@
 {
-  "version": "1.0.29",
+  "version": "1.0.30",
   "notes": {
     "en": [
-      "📅 Daily Check-In: check in and play every day for a Day 7 surprise",
-      "🏅 278 achievements with badges, plus ad-free time and Replace tokens as you collect them",
-      "👤 Player profiles: tap a friend to see their level, rank, win rate and badges",
-      "👑 Special frames for the top 3 in the rankings",
-      "🔁 Replay earlier Adventure levels to improve your stars",
-      "🗺 Weekly Adventure rankings and a bigger app icon"
+      "🎉 Friendly Match: rooms for 1 v 1, 3 or 4 players, and 2 v 2 teams that share one board",
+      "🤖 Bot Practice: Easy, Normal or Hard",
+      "🎁 9 new powers: Gift Box, Soap, Storm, Cat, Wriggler, Doomsday, Slime, Gamma Ray and Umbrella",
+      "😮 No room for your tile? The clock keeps running so you can still Replace it",
+      "📷 Your own profile picture, and frames for the all-time top 3"
     ],
     "fil": [
-      "📅 Daily Check-In: mag-check in at maglaro araw-araw para sa sorpresa sa Araw 7",
-      "🏅 278 achievement na may badge, at may libreng ad-free time at Replace token habang nag-iipon ka",
-      "👤 Player profile: i-tap ang kaibigan para makita ang level, rank, win rate at badge nila",
-      "👑 Espesyal na frame para sa top 3 ng ranking",
-      "🔁 Ulitin ang mga naunang Adventure level para pagandahin ang star mo",
-      "🗺 Lingguhang Adventure ranking at mas malaking app icon"
+      "🎉 Friendly Match: may room para sa 1 v 1, 3 o 4 na player, at 2 v 2 na team na iisa ang board",
+      "🤖 Bot Practice: Easy, Normal o Hard",
+      "🎁 9 bagong power: Gift Box, Sabon, Bagyo, Pusa, Wriggler, Doomsday, Slime, Gamma Ray at Payong",
+      "😮 Walang puwang para sa tile mo? Tuloy ang orasan kaya puwede mo pa itong palitan",
+      "📷 Sariling larawan sa profile, at frame para sa all-time top 3"
     ]
   }
 }
