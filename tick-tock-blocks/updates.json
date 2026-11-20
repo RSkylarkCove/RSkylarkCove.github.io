@@ -1,5 +1,5 @@
 {
-  "version": "1.0.28",
+  "version": "1.0.29",
   "notes": {
     "en": [
       "📅 Daily Check-In: check in and play every day for a Day 7 surprise",
@@ -7,7 +7,7 @@
       "👤 Player profiles: tap a friend to see their level, rank, win rate and badges",
       "👑 Special frames for the top 3 in the rankings",
       "🔁 Replay earlier Adventure levels to improve your stars",
-      "🗺 Weekly Adventure rankings"
+      "🗺 Weekly Adventure rankings and a bigger app icon"
     ],
     "fil": [
       "📅 Daily Check-In: mag-check in at maglaro araw-araw para sa sorpresa sa Araw 7",
@@ -15,7 +15,7 @@
       "👤 Player profile: i-tap ang kaibigan para makita ang level, rank, win rate at badge nila",
       "👑 Espesyal na frame para sa top 3 ng ranking",
       "🔁 Ulitin ang mga naunang Adventure level para pagandahin ang star mo",
-      "🗺 Lingguhang Adventure ranking"
+      "🗺 Lingguhang Adventure ranking at mas malaking app icon"
     ]
   }
 }
